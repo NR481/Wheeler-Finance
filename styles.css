@@ -12,6 +12,7 @@
     }
 a {
     text-decoration: none;
+    background-color: transparent;
 }
 header {
     display: flex;
@@ -22,7 +23,6 @@ header {
     justify-content: flex-end;
     width: 75%;
     margin-top: 2rem;
-    z-index: 100;
 }
 
 .top h4 {
@@ -39,6 +39,44 @@ header {
 }
 
 .main {
-   height: 40rem;
-   width: 30rem;
+   height: 70vh;
+   width: 50vh;
+   grid-row: 1 / span 2;
+}
+
+.promo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.promo p {
+    grid-column: 2 / span 4;
+    font-family: 'Gabriela', serif;
+    color: #455a5c;
+    font-size: 1.2rem;
+    padding: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.info {
+    grid-column: 2 / span 4;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.info h3 {
+    padding: 3rem;
+    background-color: #026670;
+    margin: 1rem;
+    width: 10%;
+    height: 10vh;
+    text-align: center;
+    font-family: 'Gabriela', serif;
+    font-size: 1.5rem;
+}
+
+.info a {
+    color: #EDEAE5;
 }
